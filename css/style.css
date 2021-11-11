@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
 }
 
 /* Nav-bar  */
@@ -13,38 +14,54 @@
 nav {
     width: 100%;
     height: 80px;
-    background: red;
     font-weight: lighter;
     font-size: 18px;
+    margin-top: 1rem;
 }
-.logo-header {
-    padding: 0 30px;
+label.logo-h {
+    padding: 0 40px;
 }
-.check{
-    margin: 25px;
+nav ul{
     float: right;
-    font-size: 2rem;
-}
-nav ul {
-    float: right;
-    margin: 25px;
+    margin-right: 20px;
 }
 nav ul li {
     display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
     position: relative;
-    list-style: none;
-    margin: 0 5px;
 }
-ul .active a {
-    color: #00D4FF;
-    padding-bottom: 8px;
-    border-bottom:  2px solid;
-}
-ul a {
+nav ul li a {
     color: #322E2F;
-    text-decoration: none;
-    padding: 5px;
 }
+nav ul .link-follow {
+    display: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.checkbtn {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    color: #00D4FF;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.active a{
+    color: #00D4FF;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00D4FF;
+}
+nav ul li a:hover {
+    color: #00D4FF;
+}
+
 ul a::before {
     content: "";
     position: absolute;
@@ -54,7 +71,7 @@ ul a::before {
     background: #00D4FF;
     height: 2px;
     transition: all 0.5s linear;
-    margin: 7px 0;
+    margin: -20px 0;
 }
 ul a::after {
     content: '';
@@ -65,7 +82,7 @@ ul a::after {
     background: #00D4FF;
     height: 2px;
     transition: all 0.5s linear;
-    margin: 7px 0;
+    margin: -20px 0;
 }
 ul a:hover::before {
     width: 100%;
@@ -75,29 +92,40 @@ ul a:hover::after {
     width: 100%;
     background: #00D4FF;
 }
-/* --------- */
 
 @media (max-width:450px){
-    .menu {
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 1rem;
-    }
-    .logo-header img {
+    .logo-h img {
         width: 70px;
+        margin-top: 15px;
     }
-    nav {
-        display: none;
+    nav{
+        background: #322E2F;
     }
-    label {
+    nav ul {
+        position: fixed;
+        background: #322E2F;
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        height: 100%;
+    }
+    nav ul li{
+        display: block;
+        line-height: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+        color: #fff;
+    }
+    nav ul .link-follow {
+        display: contents;
+    }
+    .checkbtn {
         display: block;
     }
-    ul {
-        display: block;    
+    #check:checked ~ ul {
+        left: 0;
     }
-    #check:checked ~ nav{
-        display: block;
-    }
-}
+} 
