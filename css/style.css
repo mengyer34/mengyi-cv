@@ -377,6 +377,14 @@ ul a:hover::after {
         position: relative;
         margin-top: -20%;
     }
+    /* About  */
+    .col-s-2-4 {
+        width: 100%;
+    }
+    /* Footer  */
+    .col-s-2-4 {
+        width: 100%;
+    }
 }
 
 /* Phone  */
