@@ -236,6 +236,11 @@ ul a:hover::after {
     font-size: 30px;
     letter-spacing: 0.2rem;
 }
+.font-large-c {
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+}
+
 /* Color-background  */
 .bg-dark {
     background: #322E2F;
@@ -375,15 +380,18 @@ ul a:hover::after {
     }
     .detail {
         position: relative;
-        margin-top: -20%;
+        margin-top: -40%;
     }
     /* About  */
-    .col-s-2-4 {
-        width: 100%;
+    .about h1 {
+        text-align: center;
     }
-    /* Footer  */
+    .about .button {
+        display: flex;
+        justify-content: center;
+    }
     .col-s-2-4 {
-        width: 100%;
+        width: 33%;
     }
 }
 
@@ -453,6 +461,10 @@ ul a:hover::after {
         color: #00D4FF;
         padding-bottom: 10px;
         border-bottom: 2px solid #00D4FF;
+    }
+    /* About */
+    .col-s-2-4 {
+        width: 100%;
     }
     /* footer  */ 
     .footer .hide {
