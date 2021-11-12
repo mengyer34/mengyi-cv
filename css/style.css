@@ -6,11 +6,12 @@
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
 }
-.home {
+.home{
     background-image: url(../images/bg.png);
-    width: 100%;
-    height: 100vh;
+    width:100%;
+    height:120vh;
     background-position: center;
+    background-repeat: no-repeat;
 }
 /* Nav-bar  */
 .menu {
@@ -158,6 +159,9 @@ ul a:hover::after {
 }
 
 /* line hight  */
+.line-h-0{
+    line-height: 1.6rem;
+}
 .line-h{
     line-height: 2rem;
 }
@@ -182,6 +186,9 @@ ul a:hover::after {
 }
 
 /* margin  */
+.m-y {
+    margin: 1rem 0 1rem;
+}
 .m-t {
     margin-top: 1rem;
 }
@@ -233,14 +240,16 @@ ul a:hover::after {
 
 /* Font size  */
 .font-large {
-    font-size: 30px;
-    letter-spacing: 0.2rem;
-}
-.font-large-c {
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 0.1rem;
 }
-
+.font-large-c {
+    font-size: 25px;
+    letter-spacing: 0.1rem;
+}
+.font-18 {
+    font-size: 18px;
+}
 /* Color-background  */
 .bg-dark {
     background: #322E2F;
@@ -375,6 +384,7 @@ ul a:hover::after {
         padding-bottom: 10px;
         border-bottom: 2px solid #322E2F;
     }
+    /* About  */
     .about .col-s-6 {
         width: 100%;
     }
@@ -382,7 +392,6 @@ ul a:hover::after {
         position: relative;
         margin-top: -40%;
     }
-    /* About  */
     .about h1 {
         text-align: center;
     }
@@ -392,6 +401,12 @@ ul a:hover::after {
     }
     .col-s-2-4 {
         width: 33%;
+    }
+    .font-large {
+        font-size: 20px;
+    }
+    .achive .col-s-4 {
+        width: 100%;
     }
 }
 
@@ -463,8 +478,15 @@ ul a:hover::after {
         border-bottom: 2px solid #00D4FF;
     }
     /* About */
+    .about .m-t-1 {
+        margin-top: 0;
+    }
     .col-s-2-4 {
         width: 100%;
+    }
+    .detail {
+        position: relative;
+        margin-top: -50%;
     }
     /* footer  */ 
     .footer .hide {
