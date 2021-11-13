@@ -450,8 +450,7 @@ ul a:hover::after {
     .achive .col-s-4 {
         width: 100%;
     }
-    /* Hobby */
-    .education .detail {
+    #education-page .detail {
         position: relative;
         margin-top: -20%;
     }
@@ -462,10 +461,6 @@ ul a:hover::after {
     .form-page .form {
         padding-right: 30px;
     }
-    .contact-form .col-s-4, .col-s-4 {
-        width: 100%;
-    }
-
 }
 
 /* Phone  */
@@ -494,8 +489,10 @@ ul a:hover::after {
     .home .m-t-4 {
         margin-top: 2rem;
     }
-    
-    .menu{
+    #about-page .menu,
+    #contact-page .menu,
+    #education-page .menu,
+    #hobby-page .menu{
         top: 0;
         background: #fff;
         width: 100%;
@@ -586,5 +583,11 @@ ul a:hover::after {
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+    .contact-page {
+        margin-top: 20vw;
+    }
+    .contact-form .col-s-5{
+        width: 100%;
     }
 } 
