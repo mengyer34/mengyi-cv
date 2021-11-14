@@ -423,10 +423,11 @@ ul a:hover::after {
         padding: 0;
     }
     .active-home a{
-        color: #322E2F;
+        color: #00D4FF;
         padding-bottom: 10px;
-        border-bottom: 2px solid #322E2F;
+        border-bottom: 2px solid #00D4FF;
     }
+
     /* About  */
     .about .col-s-6 {
         width: 100%;
@@ -475,7 +476,7 @@ ul a:hover::after {
     }
     .logo-hide {
         display: inherit;
-        margin-left: 40px;
+        text-align: center;
     }
     .home .container {
         margin-top: 80px;
@@ -580,8 +581,12 @@ ul a:hover::after {
         display: none;
     }
     .footer .col-s-3,
-    .col-s-6{
+    .footer .col-s-6{
         width: 100%;
+    }
+    .footer .p-1 {
+        padding: 0;
+        margin-top: 15px;
     }
     .group-ele {
         display: flex;
