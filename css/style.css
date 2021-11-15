@@ -312,7 +312,11 @@ ul a:hover::after {
     font-family: 'Rototo', sans-serif;
     font-size: 15px;
 }
-
+.form-send {
+    width: 70%;
+    padding: 10px;
+    outline: none;
+}
 /* Button  */
 .btn {
     border: none;
