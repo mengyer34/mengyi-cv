@@ -76,6 +76,11 @@ nav ul .link-follow {
 }
 
 /* Active  */
+.a_view {
+    font-weight: lighter;
+    color: #00D4FF;
+    text-decoration: underline;
+}
 .active a{
     color: #00D4FF;
     padding-bottom: 10px;
@@ -180,7 +185,7 @@ ul a:hover::after {
 }
 /* font-size  */
 .f-s-head {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
 }
 .f-s-sm {
@@ -197,7 +202,7 @@ ul a:hover::after {
     margin-top: 1rem;
 }
 .m-t-1 {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .m-t-3 {
     margin-top: 3rem;
@@ -239,7 +244,7 @@ ul a:hover::after {
 }
 /* font-Weight  */
 .f-w-light {
-    font-weight: 300;
+    font-weight: 100;
 }
 .f-w-light-sm {
     font-weight: 100;
@@ -258,7 +263,7 @@ ul a:hover::after {
     letter-spacing: 0.1rem;
 }
 .font-18 {
-    font-size: 18px;
+    font-size: 14px;
 }
 /* Color-background  */
 .bg-dark {
@@ -332,7 +337,7 @@ ul a:hover::after {
   display: inline-block;
   font-size: 15px;
   line-height: 15px;
-  padding: 18px 20px 17px;
+  padding: 14px 18px 15px;
   text-decoration: none;
   cursor: pointer;
   background: #322E2F;
